@@ -1,0 +1,4 @@
+# Simple crontab entry
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /path/to/monitor/script/monitor.pl > /dev/null 2>&1
+# Possible crontab entry based on version of cron
+0/5 * * * * /path/to/monitor/script/monitor.pl > /dev/null 2>&1

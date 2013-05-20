@@ -1,0 +1,9 @@
+Your interview asked me to include the script to have apache start at boot.
+
+The apache distribution comes with a very good start/stop script which I 
+would use and I included it here.
+
+Normally its in the /etc/init.d type directory but needs to be started 
+in the /etc/rcX.d (X usually = 3 for servers) so either the install
+(yum, apt-get, make install, etc...) makes the links or you can do it 
+manually using chkconfig or service, or go old school and use 'ln -s'
